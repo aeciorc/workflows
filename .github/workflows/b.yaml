@@ -1,0 +1,20 @@
+name: Build and Deploy to Cloud Run
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
+  push:
+    path:
+      - ./B/**
+      - ./Common
+    branches:
+      - master
+# Environment variables available to all jobs and steps in this workflow
+jobs:
+  echo-b:
+    name: Echo for B
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auth
+        run: |
+          echo B
