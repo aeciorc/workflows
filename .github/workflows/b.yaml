@@ -5,8 +5,8 @@ on:
   # but only for the master branch
   push:
     paths:
-      - ./B/**
-      - ./Common
+      - B/**
+      - Common
     branches:
       - master
 # Environment variables available to all jobs and steps in this workflow
