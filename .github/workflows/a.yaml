@@ -17,4 +17,4 @@ jobs:
     steps:
       - name: Auth
         run: |
-          echo A change
+          echo A
