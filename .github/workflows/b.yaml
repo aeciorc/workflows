@@ -7,8 +7,6 @@ on:
     path:
       - ./B/**
       - ./Common
-    branches:
-      - master
 # Environment variables available to all jobs and steps in this workflow
 jobs:
   echo-b:
